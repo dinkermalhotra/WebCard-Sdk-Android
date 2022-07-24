@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" android:tag="layout/activity_loginmain_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+       <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ivImage"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="@dimen/dp24"
+                            android:src="@drawable/ic_webcardlogo"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="@dimen/dp12"
+                            android:orientation="horizontal">
+                            <com.abisyscorp.ivalt.custom.BoldTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Confirm details"
+                                android:id="@+id/tvAName"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp18"/>
+                        </LinearLayout>
+
+                        <com.abisyscorp.ivalt.custom.BoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="details"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:id="@+id/tvAName1"
+                            android:textColor="@color/libblue"
+                            android:textSize="@dimen/sp20"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="@dimen/dp24"
+                                    android:paddingLeft="@dimen/dp5"
+                                    android:paddingRight="@dimen/dp5"
+                                    android:paddingTop="@dimen/dp10"
+                                    android:paddingBottom="@dimen/dp10">
+                                    <com.abisyscorp.ivalt.custom.NormalTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:visibility="invisible"
+                                        android:layout_marginBottom="5dp"
+                                        android:text="Phone Number"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="70dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="15dp"
+                                            android:background="@drawable/stroke_round"
+                                            android:weightSum="1">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.3"
+                                                android:id="@+id/linCode"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="@dimen/dp22"
+                                                    android:layout_height="@dimen/dp22"
+                                                    android:layout_marginStart="@dimen/dp8"
+                                                    android:layout_marginEnd="@dimen/dp5"
+                                                    android:src="@drawable/flag_in"
+                                                    android:id="@+id/ivImageFloag"/>
+
+                                                <ImageView
+                                                    android:layout_width="@dimen/dp15"
+                                                    android:layout_height="@dimen/dp15"
+                                                    android:layout_marginRight="4dp"
+                                                    android:src="@drawable/ic_dropdown" />
+
+
+
+                                                <com.abisyscorp.ivalt.custom.NormalTextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="+91"
+                                                    android:text="+91"
+                                                    android:layout_marginStart="@dimen/dp5"
+                                                    android:id="@+id/tvCountryCode"
+                                                    android:textColorHint="@color/black"
+                                                    android:textSize="@dimen/sp15"
+                                                    android:textColor="@color/black"/>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.7">
+
+                                                <com.abisyscorp.ivalt.custom.NormalEditText
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:textColor="@color/black"
+                                                    android:paddingLeft="@dimen/dp8"
+                                                    android:singleLine="true"
+                                                    android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+                                                    android:maxLength="10"
+                                                    android:inputType="number"
+                                                    android:textColorHint="@color/gray"
+                                                    android:textSize="@dimen/sp15"
+                                                    android:hint="@string/mobile"
+                                                    android:background="@color/transparent"
+                                                    android:id="@+id/etNumber"/>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="7dp"
+                                            android:background="#ffffff"
+                                            android:textSize="@dimen/sp12"
+                                            android:paddingStart="@dimen/dp10"
+                                            android:paddingEnd="@dimen/dp10"
+                                            android:text="Phone" />
+                                    </RelativeLayout>
+
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dp1"
+                                        android:visibility="gone"
+                                        android:background="#D0CCCD"/>
+
+
+
+                                    <com.abisyscorp.ivalt.custom.NormalTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="5dp"
+                                        android:visibility="invisible"
+                                        android:text="Name"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="70dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="15dp"
+                                            android:background="@drawable/stroke_round">
+
+
+
+
+                                                <com.abisyscorp.ivalt.custom.NormalEditText
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:textColor="@color/black"
+                                                    android:id="@+id/etName"
+                                                    android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+                                                    android:inputType="textPersonName"
+                                                    android:textColorHint="@color/gray"
+                                                    android:textSize="@dimen/sp15"
+                                                    android:hint="@string/entername"
+                                                    android:paddingLeft="@dimen/dp15"
+                                                    android:paddingRight="@dimen/dp15"
+                                                    android:singleLine="true"
+                                                    android:drawablePadding="@dimen/dp8"
+                                                    android:drawableStart="@drawable/ic_username"
+                                                    android:background="@color/transparent" />
+
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="7dp"
+                                            android:background="#ffffff"
+                                            android:textSize="@dimen/sp12"
+                                            android:paddingStart="@dimen/dp10"
+                                            android:paddingEnd="@dimen/dp10"
+                                            android:text="Name" />
+                                    </RelativeLayout>
+
+
+                                    <com.abisyscorp.ivalt.custom.NormalTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="5dp"
+                                        android:visibility="invisible"
+                                        android:text="Email"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="70dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="15dp"
+                                            android:background="@drawable/stroke_round">
+
+
+
+
+                                            <com.abisyscorp.ivalt.custom.NormalEditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/etEmail"
+                                                android:layout_gravity="center"
+                                                android:textColor="@color/black"
+                                                android:paddingLeft="@dimen/dp15"
+                                                android:paddingRight="@dimen/dp15"
+                                                android:singleLine="true"
+                                                android:drawablePadding="@dimen/dp8"
+                                                android:drawableStart="@drawable/ic_mail"
+                                                android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+                                                android:inputType="textEmailAddress"
+                                                android:textColorHint="@color/gray"
+                                                android:textSize="@dimen/sp16"
+                                                android:background="@color/transparent"
+                                                android:hint="@string/enteremail"/>
+
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="7dp"
+                                            android:background="#ffffff"
+                                            android:textSize="@dimen/sp12"
+                                            android:paddingStart="@dimen/dp10"
+                                            android:paddingEnd="@dimen/dp10"
+                                            android:text="Email ID" />
+                                    </RelativeLayout>
+
+                                    <com.abisyscorp.ivalt.custom.NormalEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dp45"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/black"
+                                        android:paddingLeft="@dimen/dp15"
+                                        android:paddingRight="@dimen/dp15"
+                                        android:singleLine="true"
+                                        android:visibility="gone"
+                                        android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+                                        android:inputType="textEmailAddress"
+                                        android:textColorHint="@color/gray"
+                                        android:textSize="@dimen/sp15"
+                                        android:hint="@string/enteremail"
+                                        android:background="@drawable/stroke_round"
+                                        />
+
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dp1"
+                                        android:visibility="gone"
+                                        android:background="#D0CCCD"/>
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:layout_marginTop="@dimen/dp5">
+
+                                        <ToggleButton
+                                            android:layout_width="@dimen/dp20"
+                                            android:layout_height="@dimen/dp20"
+                                            android:layout_gravity="center"
+                                            android:textOff=" "
+                                            android:textOn=" "
+                                            android:background="@drawable/check"
+                                            android:buttonTint="@color/gray"
+                                            android:id="@+id/checkbox"/>
+                                        <com.abisyscorp.ivalt.custom.NormalTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="@dimen/dp5"
+                                            android:id="@+id/tvPolicy"
+                                            android:layout_gravity="center_vertical"
+                                            android:textSize="@dimen/sp12"
+                                            android:text="I agree with iVALT’s Terms and Conditions"
+                                            android:textColor="@color/p_color"/>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="bottom"
+                                android:layout_marginBottom="@dimen/dp35">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/dp50"
+                                    android:weightSum="1">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:visibility="gone"
+                                        android:layout_marginRight="@dimen/dp10">
+                                        <com.abisyscorp.ivalt.custom.NormalButton
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dp42"
+                                            android:text="Back"
+                                            android:id="@+id/btnBack"
+                                            android:textColor="@color/white"
+                                            android:textAllCaps="false"
+                                            android:textSize="@dimen/sp16"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/gray_button" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <com.abisyscorp.ivalt.custom.NormalButton
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dp45"
+                                            android:text="Next"
+                                            android:id="@+id/btnSumbit"
+                                            android:textColor="@color/white"
+                                            android:textAllCaps="false"
+                                            android:textSize="@dimen/sp16"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/gray_button"/>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/dp24"
+                                    android:visibility="gone"
+                                    android:src="@drawable/webcom3x"/>
+
+                                <com.abisyscorp.ivalt.custom.BoldTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Universal Biometric ID®"
+                                    android:gravity="center"
+                                    android:visibility="gone"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="@dimen/dp24"
+                                    android:textSize="16sp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp42"
+                                    android:textColor="@color/white"
+                                    android:text="@string/register"
+                                    android:paddingLeft="@dimen/dp16"
+                                    android:paddingRight="@dimen/dp16"
+                                    android:textAllCaps="false"
+                                    android:textSize="@dimen/sp15"
+                                    android:visibility="gone"
+                                    android:background="@drawable/gradient_button"
+                                    />
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/loader"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@color/white">
+
+            <com.abisyscorp.ivalt.custom.NormalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Powered by "/>
+            <ImageView
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:src="@drawable/rsz_white_logo"/>
+
+            <com.abisyscorp.ivalt.custom.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iVALT"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/black" />
+            <com.abisyscorp.ivalt.custom.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="®"
+                android:textSize="@dimen/sp16"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+         

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/newblue">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/ivImage"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:src="@drawable/rsz_white_logo"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.abisyscorp.ivalt.custom.BoldTextView
+                        android:id="@+id/tvAName"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="iVALT"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                    <com.abisyscorp.ivalt.custom.BoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="®"
+                        android:layout_marginTop="-5dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"/>
+                </LinearLayout>
+
+                <com.abisyscorp.ivalt.custom.NormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Universal Biometric ID™\nAuthenticate Anywhere&#174;"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/tvAName1"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.abisyscorp.ivalt.custom.NormalTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create your Universal Biometric ID™ by clicking on &quot;Start&quot; button below.\n\nPlease note you must &quot;Accept Notifications&quot; for the App to work correctly"
+                        android:gravity="center"
+                        android:id="@+id/tvAName2"
+                        android:layout_marginRight="@dimen/dp16"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp50"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom">
+
+                        <LinearLayout
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="@dimen/dp16"
+                            android:background="@drawable/circleshadow"
+                            android:id="@+id/linInfo"
+                            android:gravity="center">
+
+                            <com.abisyscorp.ivalt.custom.NormalTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:text="i"/>
+
+                        </LinearLayout>
+                        <com.abisyscorp.ivalt.custom.NormalButton
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Start"
+                            android:id="@+id/btnStart"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp16"
+                            android:textAllCaps="false"
+                            android:layout_gravity="center"
+                            android:background="@drawable/gray_button"
+                            android:layout_marginBottom="@dimen/dp24"/>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

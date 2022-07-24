@@ -1,0 +1,155 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.abisyscorp.ivalt" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="21"
+7-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml
+8        android:targetSdkVersion="30" />
+8-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml
+9
+10    <uses-permission android:name="android.permission.INTERNET" />
+10-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:6:5-67
+10-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:6:22-64
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:7:5-65
+11-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:7:22-62
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:8:5-79
+12-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:8:22-76
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:9:5-79
+13-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:9:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:10:5-76
+14-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:10:22-73
+15    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+15-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:11:5-86
+15-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:11:22-83
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:12:5-81
+16-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:12:22-78
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:13:5-80
+17-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:13:22-77
+18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+18-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:14:5-75
+18-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:14:22-72
+19
+20    <!-- Step 1: Add the following permission to the app -->
+21    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+21-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:17:5-72
+21-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:17:22-69
+22    <!-- Step 2: This permission is depreciated in Android P -->
+23    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+23-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:19:5-74
+23-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:19:22-71
+24    <uses-permission android:name="android.permission.NFC" />
+24-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:21:5-61
+24-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:21:22-59
+25
+26    <uses-feature
+26-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:22:5-81
+27        android:name="android.hardware.nfc"
+27-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:22:19-54
+28        android:required="false" />
+28-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:22:55-79
+29
+30    <application
+30-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:24:5-76:19
+31        android:name="com.abisyscorp.ivalt.MyApplication"
+31-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:25:9-38
+32        android:networkSecurityConfig="@xml/network_security_config"
+32-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:26:9-69
+33        android:theme="@style/AppThemeblue"
+33-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:27:9-44
+34        android:usesCleartextTraffic="true" >
+34-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:28:9-44
+35        <activity
+35-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:29:9-31:56
+36            android:name="com.abisyscorp.ivalt.iValtLoginActivity"
+36-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:30:13-47
+37            android:theme="@style/Theme.Transparent" />
+37-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:31:13-53
+38        <activity
+38-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:33:9-35:15
+39            android:name="com.abisyscorp.ivalt.iValtGlobalAuthActivity"
+39-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:33:19-58
+40            android:theme="@style/Theme.Transparent" />
+40-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:34:13-53
+41        <activity
+41-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:36:9-39:51
+42            android:name="com.abisyscorp.ivalt.AboutUsActivity"
+42-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:37:13-44
+43            android:screenOrientation="portrait"
+43-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:38:13-49
+44            android:theme="@style/AppThemeView" />
+44-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:39:13-48
+45        <activity
+45-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:40:9-43:51
+46            android:name="com.abisyscorp.ivalt.ContactActivity"
+46-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:41:13-44
+47            android:screenOrientation="portrait"
+47-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:42:13-49
+48            android:theme="@style/AppThemeView" />
+48-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:43:13-48
+49        <activity
+49-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:44:9-47:51
+50            android:name="com.abisyscorp.ivalt.iValtRegistrationCompletedActivity"
+50-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:45:13-63
+51            android:screenOrientation="portrait"
+51-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:46:13-49
+52            android:theme="@style/AppThemeblue" />
+52-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:47:13-48
+53        <activity
+53-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:48:9-51:51
+54            android:name="com.abisyscorp.ivalt.IntroScreenActivity"
+54-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:49:13-48
+55            android:screenOrientation="portrait"
+55-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:50:13-49
+56            android:theme="@style/AppThemeblue" />
+56-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:51:13-48
+57        <activity
+57-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:52:9-54:52
+58            android:name="com.abisyscorp.ivalt.PrivacyPolicyActivity"
+58-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:53:13-50
+59            android:screenOrientation="portrait" />
+59-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:54:13-49
+60        <!--
+61        <meta-data
+62            android:name="com.google.firebase.messaging.default_notification_channel_id"
+63            android:value="@string/default_notification_channel_id" /> &lt;!&ndash; [START firebase_service] &ndash;&gt;
+64        <service
+65            android:name=".MyFirebaseMessagingService">
+66            <intent-filter>
+67                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+68            </intent-filter>
+69        </service>
+70        -->
+71        <!-- [END firebase_service] -->
+72        <activity
+72-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:65:9-67:61
+73            android:name="com.abisyscorp.ivalt.SplashActivity"
+73-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:66:13-43
+74            android:screenOrientation="portrait" />
+74-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:67:13-49
+75        <activity
+75-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:68:9-71:51
+76            android:name="com.abisyscorp.ivalt.iValtOtpActivity"
+76-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:69:13-45
+77            android:screenOrientation="portrait"
+77-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:70:13-49
+78            android:theme="@style/AppThemeblue" />
+78-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:71:13-48
+79        <activity
+79-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:72:9-75:51
+80            android:name="com.abisyscorp.ivalt.iValtRegistrationActivity"
+80-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:73:13-54
+81            android:screenOrientation="portrait"
+81-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:74:13-49
+82            android:theme="@style/AppThemeblue" />
+82-->C:\Users\HP\AndroidStudioProjects\MyChand\iValtLibrary\src\main\AndroidManifest.xml:75:13-48
+83    </application>
+84
+85</manifest>

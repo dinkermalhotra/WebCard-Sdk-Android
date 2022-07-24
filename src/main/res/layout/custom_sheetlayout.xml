@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadowback">
+    <com.abisyscorp.ivalt.custom.NormalTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="Info"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#bbbbbb"/>
+    <com.abisyscorp.ivalt.custom.NormalTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/black"
+        android:id="@+id/tvAbout"
+        android:text="About"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#bbbbbb"/>
+    <com.abisyscorp.ivalt.custom.NormalTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/tvFAQ"
+        android:padding="@dimen/dp10"
+        android:text="FAQs"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#bbbbbb"/>
+    <com.abisyscorp.ivalt.custom.NormalTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/tvContact"
+        android:padding="@dimen/dp10"
+        android:text="Contact Us"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#bbbbbb"/>
+    <com.abisyscorp.ivalt.custom.NormalTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/tvCancel"
+        android:padding="@dimen/dp10"
+        android:text="Cancel"/>
+
+
+</LinearLayout>

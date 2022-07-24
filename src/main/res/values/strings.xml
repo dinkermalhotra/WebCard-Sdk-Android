@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">iValt</string>
+    <string name="register">Register Now</string>
+    <string name="mobile">000-000-0000</string>
+    <string name="sp_str">iVALT</string>
+    <!--&#8482;-->
+    <string name="sp_str1">Universal 3-Factor Authentication</string>
+    <string name="sp_str2">Authenticate Anywhere</string>
+    <string name="submit">Submit</string>
+    <string name="enterotp">Enter OTP</string>
+    <string name="thankyou">Thank You!</string>
+    <string name="youare">You are Registered and Enrolled</string>
+    <string name="help">Help</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <string name="no_sim_detected">No sim card detected.</string>
+    <string name="search">Search…</string>
+
+    <string name="biometric_failed">Fingerprint not recognized</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="privacypol">Privacy Policy</string>
+    <string name="ok">OK</string>
+    <string name="textrrrr">Create your Universal Biometric ID™ by clicking on &quot;Start&quot; below,\n\nPlease note you must &quot;Accept Notifications&quot; for the App to work correctly</string>
+    <string name="textrr">With this app, you can create your Universal Biometric ID™ and then associate your ID to any supported 3rd party application on any device to securely access that application from anywhere.\n\nYou haven\'t created your Biometric ID yet. Please click Start button to process.</string>
+    <!--<string name="abouttext">&quot;iVALT® has created its Universal Biometric IDTM using facial recognition-based secure authentication for any supported application or service. The solution is comprised of the iVALT. mobile app for initial enrollment and subsequent authentication. Images of user\'s face are captured through the device camera to generate one component of this biometric ID. Once the ID is created, the user can enroll their phone number in our supported 3rd Party Apps to securely access that specific application. Subsequently, while trying to access the 3rd Party App, the user will be automatically ,mpted on their registered phone to authenticate using the iVALT, mobile app. The solution can easily be integrated with a wide variety of applications and services using the iVALT server APIs, SDK and/or browser plugin, which are linked to the iVALT® mobile app. iVALT`,, solves the &quot;weakest link&quot; at the entry point in cybersecurity.\n\nPlease review our FAQ for further information.\n\nVersion Info: iVALT®: v1.0&quot; </string>-->
+    <string name="abouttext">iVALT® has created its Universal Biometric ID™ using Face ID or Touch ID recognition-based secure authentication for any IVALT® supported application or service. The solution is comprised of the iVALT® mobile app for initial enrollment and subsequent authentication. Once the ID is created, the user can enroll their phone number in our supported Apps to securely access that specific application. Subsequently, while trying to access the App, the user will be automatically prompted on their registered phone to authenticate using the iVALT® mobile app. The solution can easily be integrated with a wide variety of applications and services using the iVALT® server APIs, SDK and/or browser plugin, which are linked to the iVALT® mobile app. iVALT® solves the “weakest link” at the entry point in cybersecurity.\n\n\Please review our FAQ for further information.</string>
+    <string name="enteremail">Enter Email</string>
+    <string name="demosite">This demo will show how iVALT® can be used to open an online document vault:\n\n1. Please enter your mobile number in the box.\n\n2. Click on “Send Notification”.\n\n3. You will receive a request from the iVALT® app for a biometric profile on your phone. Click on this notification.\n\n4. Hold your phone to present a biometric profile either with FaceID or Touch ID.\n\n5. The website will open for document download.\n\n6. You can click on the download to see a sample document.\n\n5. Email validation on contact us screen and on registration screen with the help of regex.
+</string>
+    <string name="download_title">Download File</string>
+    <string name="yes">Yes</string>
+    <string name="entername">Enter Name</string>
+
+
+    <string name="grant">Grant</string>
+    <string name="gotPermission">Go to Permissions to Grant Location</string>
+    <string name="unableToGetPermission">Unable to get Permission</string>
+    <string name="needMultiplePermission">Need Multiple Permissions</string>
+    <string name="needMultiplePermissionMsg">This app needs Camera, Storage and Location permissions.</string>
+    <string name="gotoPermission">Go to Permissions Option to Grant Permission(s)</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

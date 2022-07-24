@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/relMain"
+        android:background="@color/newblue" android:tag="layout/activity_contact_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/frmBack">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@drawable/back_white"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivBack" />
+
+                <com.abisyscorp.ivalt.custom.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:paddingLeft="2dp"
+                    android:id="@+id/tvBack"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <com.abisyscorp.ivalt.custom.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16"
+                android:layout_gravity="center"
+                android:text="Contact Us"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                android:background="@color/text_gray"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <com.abisyscorp.ivalt.custom.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvEmail"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:text="Email"/>
+
+                <com.abisyscorp.ivalt.custom.NormalEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp42"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:background="@drawable/et_back"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:textColor="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/etEmail"/>
+
+                <com.abisyscorp.ivalt.custom.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMobile"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:text="Mobile Number"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp42"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:background="@drawable/et_back"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/dp10"
+                    android:textColor="@color/white"
+                    android:paddingRight="@dimen/dp10"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/etMobile"/>
+
+                <com.abisyscorp.ivalt.custom.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMessage"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:text="Message"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="4"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:gravity="top|left"
+                    android:textColor="@color/white"
+                    android:paddingBottom="@dimen/dp5"
+                    android:background="@drawable/et_back"
+                    android:imeOptions="actionDone"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:id="@+id/etMessage"/>
+
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/loader"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleLarge"/>
+
+            <com.abisyscorp.ivalt.custom.NormalButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:id="@+id/btnSend"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp16"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_button"
+                android:layout_marginBottom="@dimen/dp42"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+         

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/relMain"
+        android:background="@color/white" android:tag="layout/activity_about_us_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/frmBack">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@drawable/back_white"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivBack" />
+
+                <com.abisyscorp.ivalt.custom.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:paddingLeft="2dp"
+                    android:id="@+id/tvBack"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <com.abisyscorp.ivalt.custom.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16"
+                android:layout_gravity="center"
+                android:text="About Us"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                android:background="@color/text_gray"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/newblue">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:scrollbarThumbVertical="@color/transparent"
+                    android:scrollbarTrackVertical="@color/transparent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <com.abisyscorp.ivalt.custom.NormalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp16"
+                            android:id="@+id/tvText"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="@dimen/dp16"
+                            android:text="@string/abouttext"/>
+
+                        <com.abisyscorp.ivalt.custom.NormalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvText2"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="@dimen/dp16" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/loader"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleLarge"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+         

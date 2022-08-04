@@ -882,12 +882,13 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
         try {
             params.put("mobile",sp.getString("uPhone", ""));
             params.put("status",status);
-            params.put("latitude",sp.getString("lat",""));
-            params.put("longitude",sp.getString("lng",""));
-            params.put("longitude",sp.getString("lng",""));
-            params.put("address",sp.getString("address",""));
-            params.put("public_key",MyFirebaseMessagingService.public_key);
             params.put("country_code",sp.getString("country_code",""));
+          /*  params.put("latitude",sp.getString("lat",""));
+            params.put("longitude",sp.getString("lng",""));
+            params.put("longitude",sp.getString("lng",""));
+            params.put("address",sp.getString("address",""))*/;
+            /*params.put("public_key",MyFirebaseMessagingService.public_key);*/
+
             //params.put("auth_status",status);
             Log.d(TAG+"global",params.toString());
         } catch (JSONException e) {
@@ -895,11 +896,12 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
         }
 
         RequestQueue requestQueue = Volley.newRequestQueue(iValtGlobalAuthActivity.this);
-        JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, rurl, null, new com.android.volley.Response.Listener<JSONObject>() {
+        JsonObjectRequest jor = new JsonObjectRequest(Request.Method.POST, rurl, params, new com.android.volley.Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Log.d(TAG+"global",response.toString());
                 closeProgress();
+                iValtGlobalAuthActivity.this.finish();
                 if (response.has("status")){
                     try {
                         if (response.getJSONObject("data").getString("status").equalsIgnoreCase("true")){
@@ -907,7 +909,7 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
                         }else {
                             //updateResultsLabel(response.getString("message"));
                         }
-                        iValtGlobalAuthActivity.this.finish();
+
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -917,6 +919,7 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 closeProgress();
+                iValtGlobalAuthActivity.this.finish();
                 VolleyLog.e("VolleyErrorglobal","Error : "+error.getMessage());
                 String strError = "";
                 if( error instanceof NetworkError) {

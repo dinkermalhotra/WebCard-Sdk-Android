@@ -10,8 +10,8 @@ public class ApiClient {
     public static final String BASE_IVURL = "https://ivalt.com/services/ivalt_backend/public/";
     public static final String WEBCARDBASE_URL = "https://ivalt.com/services/ivalt_backend/public/webcard/";*/
 
-    public static final String BASE_IVURLWP = " https://api.ivalt.com/admin/public/api/webcard/wp/";
-    public static final String BASE_IVURL = " https://api.ivalt.com/admin/public/api/webcard/public/";
+    public static final String BASE_IVURLWP = "https://api.ivalt.com/admin/public/api/webcard/wp/";
+    public static final String BASE_IVURL = "https://api.ivalt.com/admin/public/api/webcard/";
     public static final String WEBCARDBASE_URL = " https://api.ivalt.com/admin/public/api/webcard/";
 
     public static final String X_API_KEY = "NgwbltECec1LignlFDa57479D3cZfgnE2bvwGyCp";

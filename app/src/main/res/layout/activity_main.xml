@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvText"
+        android:background="@color/colorPrimary"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/dp40"
+        android:text="Registration" />
+    <TextView android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvTextUpdate"
+        android:visibility="gone"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="Update"/>
+    <TextView android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvTextLogin"
+        android:background="@color/colorPrimary"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="Login"/>
+    <TextView
+        android:id="@+id/tvTextNoti"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="Notification"/>
+    <TextView
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvRemoveError"
+        android:background="@color/colorPrimary"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="RemoveError"/>
+    <TextView
+        android:id="@+id/tvUSerDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="UserDetails"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"/>
+</LinearLayout>

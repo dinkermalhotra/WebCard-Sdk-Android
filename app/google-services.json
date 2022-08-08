@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "431664498980",
+    "project_id": "webcard-app",
+    "storage_bucket": "webcard-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431664498980:android:8b50f3a41ab04333af4bb1",
+        "android_client_info": {
+          "package_name": "com.web.webcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431664498980-rmn6ptlqk1j6u88uarm0mvkj8nl1aeb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2GpS3-XcSC2bMeDoeQRdTPf1BVmFLrRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431664498980-rmn6ptlqk1j6u88uarm0mvkj8nl1aeb1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "431664498980-27312v52hnvqi2bocj6tasseinjb383q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.web.webcard"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

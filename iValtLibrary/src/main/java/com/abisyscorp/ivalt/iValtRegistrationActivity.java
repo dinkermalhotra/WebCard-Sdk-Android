@@ -622,7 +622,7 @@ public class iValtRegistrationActivity extends AppCompatActivity implements OnCl
                 if( error instanceof NetworkError) {
                     strError = "No internet connection!";
                 } else if( error instanceof ServerError) {
-                    strError = "Invalid code or server error, Try after some time.";
+                    strError = "Server error, Try after some time.";
                 } else if( error instanceof AuthFailureError) {
                     strError = "AuthFailure, Try after some time.";
                 } else if( error instanceof ParseError) {

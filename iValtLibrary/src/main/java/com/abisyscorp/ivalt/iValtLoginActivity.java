@@ -162,7 +162,7 @@ public class iValtLoginActivity extends AppCompatActivity {
                 if( error instanceof NetworkError) {
                     strError = "No internet connection!";
                 } else if( error instanceof ServerError) {
-                    strError = "Invalid code or server error, Try after some time.";
+                    strError = "Server error, Try after some time.";
                 } else if( error instanceof AuthFailureError) {
                     strError = "AuthFailure, Try after some time.";
                 } else if( error instanceof ParseError) {
@@ -554,7 +554,7 @@ public class iValtLoginActivity extends AppCompatActivity {
                 if( error instanceof NetworkError) {
                     strError = "No internet connection!";
                 } else if( error instanceof ServerError) {
-                    strError = "Invalid code or server error, Try after some time.";
+                    strError = "Server error, Try after some time.";
                 } else if( error instanceof AuthFailureError) {
                     strError = "AuthFailure, Try after some time.";
                 } else if( error instanceof ParseError) {
@@ -566,7 +566,7 @@ public class iValtLoginActivity extends AppCompatActivity {
                 }else {
                     strError = "Error : " + error.getMessage();
                 }
-                Constants.showInformation(iValtLoginActivity.this,strError);
+                //Constants.showInformation(iValtLoginActivity.this,strError);
                 //LoginAuthenticateActivity.this.finish();
                 setResultData("false",strError);
             }
@@ -633,7 +633,7 @@ public class iValtLoginActivity extends AppCompatActivity {
                     if( error instanceof NetworkError) {
                         strError = "No internet connection!";
                     } else if( error instanceof ServerError) {
-                        strError = "Invalid code or server error, Try after some time.";
+                        strError = "Server error, Try after some time.";
                     } else if( error instanceof AuthFailureError) {
                         strError = "AuthFailure, Try after some time.";
                     } else if( error instanceof ParseError) {

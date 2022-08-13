@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onResponseData(String status, UserData userData) {
                         if (status.equalsIgnoreCase("true")) {
                             Log.d("userDetailssss", userData.getName());
+                            Toast.makeText(MainActivity.this,userData.getName(),Toast.LENGTH_LONG).show();
                         }
                     }
                 });
@@ -64,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity mainActivity = MainActivity.this;
                 iValtAuthentication.launchLogin(mainActivity, mainActivity.deviceToken, new iValtAuthentication.OnLoginResultListener() {
                     public void onData(String status, UserData userDetail) {
-                        Log.d("userData12", "///" + userDetail.getId() + "===" + status);
+                        Log.d("userData12", "///" + "===" + status);
                         if (userDetail != null) {
-                            Toast.makeText(MainActivity.this, "" + userDetail.getId() + "====" + status, Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this, "" + /*userDetail.getId()*/ "====" + status, Toast.LENGTH_LONG).show();
                         }
                     }
                 });

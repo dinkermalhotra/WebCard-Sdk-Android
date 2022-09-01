@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iValtSdkDemoApp.iml" filepath="$PROJECT_DIR$/.idea/modules/iValtSdkDemoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/iValtSdkDemoApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/iValtSdkDemoApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/iValtSdkDemoApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/iValtSdkDemoApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/iValtSdkDemoApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/iValtSdkDemoApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/iValtSdkDemoApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/iValtSdkDemoApp.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iValtLibrary/iValtSdkDemoApp.iValtLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/iValtLibrary/iValtSdkDemoApp.iValtLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iValtLibrary/iValtSdkDemoApp.iValtLibrary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/iValtLibrary/iValtSdkDemoApp.iValtLibrary.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iValtLibrary/iValtSdkDemoApp.iValtLibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/iValtLibrary/iValtSdkDemoApp.iValtLibrary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iValtLibrary/iValtSdkDemoApp.iValtLibrary.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/iValtLibrary/iValtSdkDemoApp.iValtLibrary.unitTest.iml" />
+    </modules>
+  </component>
+</project>

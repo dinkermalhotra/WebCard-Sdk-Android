@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
                         if (status.equalsIgnoreCase("true")) {
                             Log.d("userDetailssss", userData.getName());
                             Toast.makeText(MainActivity.this,userData.getName(),Toast.LENGTH_LONG).show();
+                        }else {
+                            Toast.makeText(MainActivity.this,status,Toast.LENGTH_LONG).show();
                         }
                     }
                 });

@@ -285,32 +285,24 @@ public class iValtAuthentication {
                         String json = "";
                         String strError = "";
                         switch (response.statusCode) {
-                            case 404:
-                                strError = "Page not Found";
-                                break;
+
                             case 500:
                                 strError = "Server error, Try after some time.";
+                                listener.onResponseData("false",null);
                                 break;
                             case 422:
-                                json = new String(response.data);
-                                try {
-                                    JSONObject jData = new JSONObject(json);
-                                    if (jData.getString("status").equalsIgnoreCase("error")) {
-                                        listener.onResponseData("false",null);
-                                    }
-                                } catch (Exception e) {
-                                    e.printStackTrace();
-                                }
-                                break;
-
+                            case 404:
                             case 400:
                                 json = new String(response.data);
                                 try {
                                     JSONObject jData = new JSONObject(json);
-                                    if (jData.getString("status").equalsIgnoreCase("error")) {
+                                    if (jData.has("error")){
+                                        listener.onResponseData("false",null);
+                                    }else {
                                         listener.onResponseData("false",null);
                                     }
                                 } catch (Exception e) {
+                                    listener.onResponseData("false",null);
                                     e.printStackTrace();
                                 }
                                 break;

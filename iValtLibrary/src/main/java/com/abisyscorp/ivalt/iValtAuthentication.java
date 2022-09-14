@@ -122,7 +122,7 @@ public class iValtAuthentication {
         //Toast.makeText(mContext.getApplicationContext(), "///"+new Gson().toJson(mMapData),Toast.LENGTH_LONG).show();
         if ((mMapData !=null?mMapData.size():0) > 0) {
             Intent intent = new Intent(mContext, iValtGlobalAuthActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             mContext.startActivity(intent);
         }
     }
@@ -271,7 +271,9 @@ public class iValtAuthentication {
                         listener.onResponseData(response.getJSONObject("data").getString("status"),null);
                     }
                 } catch (JSONException e) {
+                    listener.onResponseData("false",null);
                     e.printStackTrace();
+
                 }
             }
             }, new com.android.volley.Response.ErrorListener() {
@@ -308,24 +310,10 @@ public class iValtAuthentication {
                                 break;
 
                             default:
+                                listener.onResponseData("false",null);
+                                break;
                         }
 
-
-                        if( error instanceof NetworkError) {
-                            strError = "No internet connection!";
-                        } else if( error instanceof ServerError) {
-                            strError = "server error, Try after some time.";
-                        } else if( error instanceof AuthFailureError) {
-                            strError = "AuthFailure, Try after some time.";
-                        } else if( error instanceof ParseError) {
-                            strError = "Parser error, Try after some time.";
-                        } else if( error instanceof NoConnectionError) {
-                            strError = "No internet connection!.";
-                        } else if( error instanceof TimeoutError) {
-                            strError = "Timeout error.";
-                        }else {
-                            strError = "Error : " + error.getMessage();
-                        }
                         Log.d("removeUser",strError);
                     }
                 }){

@@ -704,16 +704,14 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
                 iValtAuthentication.mMapData.clear();
                 if (response.has("status")){
                     try {
-                        if (response.getJSONObject("data").getString("status").equalsIgnoreCase("true")){
-                            updateResultsLabel(response.getJSONObject("data").optString("message"));
-                        }else {
-                            updateResultsLabel(response.getJSONObject("data").optString("message"));
-                        }
+                        updateResultsLabel(response.getJSONObject("data").optString("message"));
                         iValtGlobalAuthActivity.this.finish();
                     } catch (JSONException e) {
                         e.printStackTrace();
+                        iValtGlobalAuthActivity.this.finish();
                     }
                 }
+                iValtGlobalAuthActivity.this.finish();
 
             }
         }, new com.android.volley.Response.ErrorListener() {
@@ -721,6 +719,7 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 closeProgress();
                 iValtAuthentication.mMapData.clear();
+                iValtGlobalAuthActivity.this.finish();
                 VolleyLog.e("VolleyError","Error : "+error.getMessage());
                 String strError = "";
                 if( error instanceof NetworkError) {
@@ -738,17 +737,7 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
                 }else {
                     strError = "Error : " + error.getMessage();
                 }
-                try {
-                    final String finalStrError = strError;
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Constants.showInformation(iValtGlobalAuthActivity.this, finalStrError);
-                        }
-                    });
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
+
                 iValtGlobalAuthActivity.this.finish();
 
             }
@@ -794,22 +783,21 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
                 iValtAuthentication.mMapData.clear();
                 if (response.has("data")){
                     try {
-                        if (response.getJSONObject("data").getString("status").equalsIgnoreCase("true")){
-                            updateResultsLabel(response.getJSONObject("data").optString("message"));
-                        }else {
-                            updateResultsLabel(response.getJSONObject("data").optString("message"));
-                        }
+                        updateResultsLabel(response.getJSONObject("data").optString("message"));
                         iValtGlobalAuthActivity.this.finish();
                     } catch (Exception e) {
                         e.printStackTrace();
+                        iValtGlobalAuthActivity.this.finish();
                     }
                 }
+                iValtGlobalAuthActivity.this.finish();
             }
         }, new com.android.volley.Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 closeProgress();
                 iValtAuthentication.mMapData.clear();
+                iValtGlobalAuthActivity.this.finish();
                 VolleyLog.e("VolleyError","Error : "+error.getMessage());
                 String strError = "";
                 if( error instanceof NetworkError) {
@@ -826,17 +814,6 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
                     strError = "Timeout error.";
                 }else {
                     strError = "Error : " + error.getMessage();
-                }
-                try {
-                    final String finalStrError = strError;
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Constants.showInformation(iValtGlobalAuthActivity.this, finalStrError);
-                        }
-                    });
-                }catch (Exception e){
-                    e.printStackTrace();
                 }
                 iValtGlobalAuthActivity.this.finish();
 
@@ -902,7 +879,7 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
                 Log.d(TAG+"global",response.toString());
                 closeProgress();
                 iValtGlobalAuthActivity.this.finish();
-                if (response.has("status")){
+              /*  if (response.has("status")){
                     try {
                         if (response.getJSONObject("data").getString("status").equalsIgnoreCase("true")){
                             //updateResultsLabel(response.getString("message"));
@@ -913,7 +890,7 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                }
+                }*/
             }
         }, new com.android.volley.Response.ErrorListener() {
             @Override
@@ -936,17 +913,6 @@ public class iValtGlobalAuthActivity extends AppCompatActivity {
                     strError = "Timeout error.";
                 }else {
                     strError = "Error : " + error.getMessage();
-                }
-                try {
-                    final String finalStrError = strError;
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Constants.showInformation(iValtGlobalAuthActivity.this, finalStrError);
-                        }
-                    });
-                }catch (Exception e){
-                    e.printStackTrace();
                 }
 
                 iValtGlobalAuthActivity.this.finish();

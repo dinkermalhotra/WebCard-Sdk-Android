@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:text="Verification code"
                 android:gravity="center"
-                android:textSize="@dimen/dp22"
+                android:textSize="@dimen/sp28"
                 android:layout_marginTop="@dimen/dp20"
                 android:textColor="@color/p_color"/>
 
@@ -101,8 +101,8 @@
                 android:layout_marginTop="@dimen/dp8"
                 android:textStyle="bold"
                 android:id="@+id/tvAName1"
-                android:textColor="@color/black"
-                android:textSize="16sp"/>
+                android:textColor="@color/battleshipgray"
+                android:textSize="15sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -157,7 +157,7 @@
                                     android:gravity="center"
                                     android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
                                     android:inputType="number"
-                                    android:textColorHint="@color/gray"
+                                    android:textColorHint="@color/battleshipgray"
                                     android:textSize="@dimen/sp15"
                                     android:hint="0"
                                     android:background="@drawable/stroke_round"
@@ -175,7 +175,7 @@
                                     android:gravity="center"
                                     android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
                                     android:inputType="number"
-                                    android:textColorHint="@color/gray"
+                                    android:textColorHint="@color/battleshipgray"
                                     android:textSize="@dimen/sp15"
                                     android:hint="0"
                                     android:background="@drawable/stroke_round"
@@ -193,7 +193,7 @@
                                     android:gravity="center"
                                     android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
                                     android:inputType="number"
-                                    android:textColorHint="@color/gray"
+                                    android:textColorHint="@color/battleshipgray"
                                     android:textSize="@dimen/sp15"
                                     android:hint="0"
                                     android:background="@drawable/stroke_round"
@@ -210,7 +210,7 @@
                                     android:gravity="center"
                                     android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
                                     android:inputType="number"
-                                    android:textColorHint="@color/gray"
+                                    android:textColorHint="@color/battleshipgray"
                                     android:textSize="@dimen/sp15"
                                     android:hint="0"
                                     android:background="@drawable/stroke_round"
@@ -227,7 +227,7 @@
                                 android:textSize="@dimen/sp14"
                                 android:paddingLeft="@dimen/dp8"
                                 android:paddingRight="@dimen/dp8"
-                                android:textColor="@color/p_color"
+                                android:textColor="@color/battleshipgray"
                                 android:textAllCaps="false"
                                 android:layout_marginTop="@dimen/dp16"
                                 android:layout_gravity="center"
@@ -309,12 +309,11 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
                             android:layout_weight="1">
 
                             <com.abisyscorp.ivalt.custom.NormalButton
                                 android:layout_width="match_parent"
-                                android:layout_height="@dimen/dp45"
+                                android:layout_height="@dimen/dp50"
                                 android:text="Verify"
                                 android:textSize="@dimen/sp16"
                                 android:id="@+id/btnSumbit"
@@ -391,12 +390,14 @@
         android:layout_height="@dimen/dp50"
         android:layout_alignParentBottom="true"
         android:gravity="center"
+        android:layout_marginBottom="@dimen/dp10"
         android:background="@color/white">
 
         <com.abisyscorp.ivalt.custom.NormalTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:textColor="@color/battleshipgray"
+            android:textSize="@dimen/sp12"
             android:text="Powered by "/>
         <ImageView
             android:layout_width="@dimen/dp30"

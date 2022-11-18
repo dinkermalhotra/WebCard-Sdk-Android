@@ -28,7 +28,7 @@ public class NormalEditText extends AppCompatEditText {
     }
 
     void init(Context context) {
-        Typeface font = Typeface.createFromAsset(getContext().getAssets(), "fonts/Montserrat-Medium.otf");
+        Typeface font = Typeface.createFromAsset(getContext().getAssets(), "fonts/rubik_regular.ttf");
         setTypeface(font);
     }
 

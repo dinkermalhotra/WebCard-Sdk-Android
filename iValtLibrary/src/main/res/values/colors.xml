@@ -51,4 +51,5 @@
     <color name="dialog_description">#505050</color>
     <color name="dialog_status">#fb744a</color>
     <color name="dialog_cancel_btn">#009689</color>
+    <color name="battleshipgray">#677385</color>
 </resources>

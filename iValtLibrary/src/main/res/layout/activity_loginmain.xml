@@ -51,7 +51,7 @@
                                 android:id="@+id/tvAName"
                                 android:gravity="center"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/sp18"/>
+                                android:textSize="@dimen/sp28"/>
                         </LinearLayout>
 
                         <com.abisyscorp.ivalt.custom.BoldTextView
@@ -152,8 +152,8 @@
                                                     android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
                                                     android:maxLength="10"
                                                     android:inputType="number"
-                                                    android:textColorHint="@color/gray"
-                                                    android:textSize="@dimen/sp15"
+                                                    android:textColorHint="@color/battleshipgray"
+                                                    android:textSize="@dimen/sp16"
                                                     android:hint="@string/mobile"
                                                     android:background="@color/transparent"
                                                     android:id="@+id/etNumber"/>
@@ -169,6 +169,8 @@
                                             android:layout_marginTop="7dp"
                                             android:background="#ffffff"
                                             android:textSize="@dimen/sp12"
+                                            android:textColor="@color/battleshipgray"
+                                            android:fontFamily="@font/rubik_light"
                                             android:paddingStart="@dimen/dp10"
                                             android:paddingEnd="@dimen/dp10"
                                             android:text="Phone" />
@@ -212,8 +214,8 @@
                                                     android:id="@+id/etName"
                                                     android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
                                                     android:inputType="textPersonName"
-                                                    android:textColorHint="@color/gray"
-                                                    android:textSize="@dimen/sp15"
+                                                    android:textColorHint="@color/battleshipgray"
+                                                    android:textSize="@dimen/sp16"
                                                     android:hint="@string/entername"
                                                     android:paddingLeft="@dimen/dp15"
                                                     android:paddingRight="@dimen/dp15"
@@ -231,6 +233,8 @@
                                             android:layout_marginTop="7dp"
                                             android:background="#ffffff"
                                             android:textSize="@dimen/sp12"
+                                            android:textColor="@color/battleshipgray"
+                                            android:fontFamily="@font/rubik_light"
                                             android:paddingStart="@dimen/dp10"
                                             android:paddingEnd="@dimen/dp10"
                                             android:text="Name" />
@@ -271,7 +275,7 @@
                                                 android:drawableStart="@drawable/ic_mail"
                                                 android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
                                                 android:inputType="textEmailAddress"
-                                                android:textColorHint="@color/gray"
+                                                android:textColorHint="@color/battleshipgray"
                                                 android:textSize="@dimen/sp16"
                                                 android:background="@color/transparent"
                                                 android:hint="@string/enteremail"/>
@@ -284,6 +288,8 @@
                                             android:layout_marginLeft="10dp"
                                             android:layout_marginTop="7dp"
                                             android:background="#ffffff"
+                                            android:textColor="@color/battleshipgray"
+                                            android:fontFamily="@font/rubik_light"
                                             android:textSize="@dimen/sp12"
                                             android:paddingStart="@dimen/dp10"
                                             android:paddingEnd="@dimen/dp10"
@@ -338,7 +344,7 @@
                                             android:paddingLeft="@dimen/dp5"
                                             android:id="@+id/tvPolicy"
                                             android:layout_gravity="center_vertical"
-                                            android:textSize="@dimen/sp12"
+                                            android:textSize="@dimen/sp14"
                                             android:text="I agree with iVALT’s Terms and Conditions"
                                             android:textColor="@color/p_color"/>
 
@@ -389,7 +395,7 @@
 
                                         <com.abisyscorp.ivalt.custom.NormalButton
                                             android:layout_width="match_parent"
-                                            android:layout_height="@dimen/dp45"
+                                            android:layout_height="@dimen/dp50"
                                             android:text="Next"
                                             android:id="@+id/btnSumbit"
                                             android:textColor="@color/white"
@@ -466,12 +472,14 @@
             android:layout_height="@dimen/dp50"
             android:layout_alignParentBottom="true"
             android:gravity="center"
+            android:layout_marginBottom="@dimen/dp10"
             android:background="@color/white">
 
             <com.abisyscorp.ivalt.custom.NormalTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/battleshipgray"
+                android:textSize="@dimen/sp12"
                 android:text="Powered by "/>
             <ImageView
                 android:layout_width="@dimen/dp30"

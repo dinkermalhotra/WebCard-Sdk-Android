@@ -27,7 +27,7 @@ public class BoldTextView extends AppCompatTextView {
     }
 
     void init(Context context) {
-        Typeface font = Typeface.createFromAsset(getContext().getAssets(), "fonts/Montserrat-SemiBold.otf");
+        Typeface font = Typeface.createFromAsset(getContext().getAssets(), "fonts/rubik_medium.ttf");
         setTypeface(font);
     }
 

@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="@color/gray" />
-            <corners android:radius="@dimen/dp20" />
+            <solid android:color="#95ff4057" />
+            <corners android:radius="@dimen/dp24" />
         </shape>
     </item>
     <item android:state_pressed="false">
@@ -16,7 +16,7 @@
                 android:endColor="@color/new_red"
                 android:startColor="@color/new_red"/>
 
-            <corners android:radius="@dimen/dp20" />
+            <corners android:radius="@dimen/dp24" />
         </shape>
     </item>
 </selector>

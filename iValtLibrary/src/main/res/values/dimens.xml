@@ -51,5 +51,8 @@
     <dimen name="biometric_bottom_sheet_padding">16dp</dimen>
     <dimen name="biometric_fingerprint_image_size">60dp</dimen>
     <dimen name="dp35">35dp</dimen>
+    <dimen name="sp28">28sp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="sp22">22sp</dimen>
 
 </resources>

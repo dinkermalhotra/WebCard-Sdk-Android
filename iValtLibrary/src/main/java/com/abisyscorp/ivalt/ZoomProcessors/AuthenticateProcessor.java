@@ -106,6 +106,7 @@ public class AuthenticateProcessor extends Processor implements FaceTecFaceScanP
         //
         // Part 8:  Actually send the request.
         //
+        //
         NetworkingHelpers.getApiClient().newCall(request).enqueue(new Callback() {
             @Override
             public void onResponse(@NonNull Call call, @NonNull okhttp3.Response response) throws IOException {

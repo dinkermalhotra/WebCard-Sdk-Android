@@ -54,5 +54,6 @@
     <dimen name="sp28">28sp</dimen>
     <dimen name="dp48">48dp</dimen>
     <dimen name="sp22">22sp</dimen>
+    <dimen name="dp43">43dp</dimen>
 
 </resources>
